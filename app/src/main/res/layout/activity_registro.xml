@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:layout_width="match_parent"
+    android:id="@+id/layoutRegistro">
+
+    <ImageView
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/logoRegistro"
+        android:src="@drawable/logomuni"
+        android:layout_weight="0.08" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp"
+        android:id="@+id/spaceRegistro" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Nombres: "
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/us_Nombres" android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:hint="Ej: Juan Carlos"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Apellidos: "
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/us_Apellidos"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:hint="Ej:Campos Pérez"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="R.U.T: "
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/us_Rut"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:hint="12345678-9"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="15dp"
+        android:id="@+id/spaceMenu3" />
+
+    <Button
+        android:id="@+id/us_Login"
+        android:text="Registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

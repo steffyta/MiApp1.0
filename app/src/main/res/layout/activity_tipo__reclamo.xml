@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:layout_width="match_parent"
+    android:id="@+id/layoutSugerencia"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:text="¿Qué tipo de reclamo desea hacer?"
+        android:id="@+id/textSugerencia"
+        android:layout_gravity="center_horizontal"
+        android:textSize="21sp"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp"
+        android:id="@+id/spaceTipoReclamo" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehiculo"
+            android:id="@+id/rbtnVehiculo"
+            android:layout_gravity="center_vertical|left"
+            android:textSize="20sp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:id="@+id/spaceTipoReclamo2" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escombros"
+            android:id="@+id/rbtnEscombros"
+            android:layout_gravity="center_vertical|left"
+            android:textSize="20sp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:id="@+id/spaceTipoReclamo3" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Microbasural"
+            android:id="@+id/rbtnMicrobasural"
+            android:layout_gravity="center_vertical|left"
+            android:textSize="20sp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:id="@+id/spaceTipoReclamo4" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trabajadores"
+            android:id="@+id/rbtnTrabajadores"
+            android:layout_gravity="center_vertical|left"
+            android:textSize="20sp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:id="@+id/spaceTipoReclamo5" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limpieza de calles"
+            android:id="@+id/rbtnCalle"
+            android:layout_gravity="center_vertical|left"
+            android:textSize="20sp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:id="@+id/spaceTipoReclamo6" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Residuos domiciliarios"
+            android:id="@+id/rbtnResiduos"
+            android:layout_gravity="center_vertical|left"
+            android:textSize="20sp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:id="@+id/spaceTipoReclamo7" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sumideros de aguas lluvia"
+            android:id="@+id/rbtnSumideros"
+            android:layout_gravity="center_vertical|left"
+            android:textSize="20sp"
+            android:onClick="onRadioButtonClicked"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:id="@+id/spaceTipoReclamo8" />
+
+
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:layout_width="match_parent"
+    android:id="@+id/layoutMenu">
+
+    <ImageView
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/logoMenu"
+        android:src="@drawable/logomuni"
+        android:layout_weight="0.01" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp"
+        android:id="@+id/spaceMenu" />
+
+    <Button
+        android:id="@+id/btnSugerencia"
+        android:text="Sugerencia/Felicitaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="15dp"
+        android:id="@+id/spaceMenu2" />
+
+    <Button
+        android:id="@+id/btnReclamo"
+        android:text="Reclamo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="15dp"
+        android:id="@+id/spaceMenu3" />
+
+    <Button
+        android:id="@+id/btnInfo"
+        android:text="Información del Servicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="15dp"
+        android:id="@+id/spaceMenu4" />
+
+    <Button
+        android:id="@+id/btnAyuda"
+        android:text="Ayuda/Video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
