@@ -10,7 +10,7 @@
         android:layout_width="330dp"
         android:layout_height="wrap_content"
         android:text="¿Qué tipo de reclamo desea hacer?"
-        android:id="@+id/textSugerencia"
+        android:id="@+id/textTipoReclamo"
         android:layout_gravity="center_horizontal"
         android:textSize="21sp"/>
     <Space
