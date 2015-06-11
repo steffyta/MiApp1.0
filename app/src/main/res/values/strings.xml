@@ -7,4 +7,5 @@
     <string name="title_activity_sugerencia">Sugerencia</string>
     <string name="title_activity_reclamo">Reclamo</string>
     <string name="title_activity_tipo__reclamo">Tipo_Reclamo</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>

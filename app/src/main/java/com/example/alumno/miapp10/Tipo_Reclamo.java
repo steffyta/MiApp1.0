@@ -1,5 +1,6 @@
 package com.example.alumno.miapp10;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,7 +14,49 @@ public class Tipo_Reclamo extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reclamo);
+        setContentView(R.layout.activity_tipo__reclamo);
+        findViewById(R.id.rbtnVehiculo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Tipo_Reclamo.this, Reclamo.class));
+            }
+        });
+        findViewById(R.id.rbtnEscombros).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Tipo_Reclamo.this, Reclamo.class));
+            }
+        });
+        findViewById(R.id.rbtnMicrobasural).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Tipo_Reclamo.this, Reclamo.class));
+            }
+        });
+        findViewById(R.id.rbtnTrabajadores).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Tipo_Reclamo.this, Reclamo.class));
+            }
+        });
+        findViewById(R.id.rbtnCalle).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Tipo_Reclamo.this, Reclamo.class));
+            }
+        });
+        findViewById(R.id.rbtnResiduos).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Tipo_Reclamo.this, Reclamo.class));
+            }
+        });
+        findViewById(R.id.rbtnSumideros).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Tipo_Reclamo.this, Reclamo.class));
+            }
+        });
     }
 
 

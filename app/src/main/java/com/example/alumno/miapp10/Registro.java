@@ -13,16 +13,22 @@ public class Registro extends ActionBarActivity implements View.OnClickListener 
     Button us_Login;
     EditText us_Nombres,us_Apellidos,us_Rut;
 
-    protected void OnCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
 
-        us_Nombres=(EditText) findViewById(R.id.us_Nombres);
-        us_Apellidos =(EditText) findViewById(R.id.us_Apellidos);
-        us_Rut= (EditText) findViewById(R.id.us_Rut);
-        us_Login=(Button) findViewById(R.id.us_Login);
+        us_Nombres = (EditText) findViewById(R.id.us_Nombres);
+        us_Apellidos = (EditText) findViewById(R.id.us_Apellidos);
+        us_Rut = (EditText) findViewById(R.id.us_Rut);
+        us_Login = (Button) findViewById(R.id.us_Login);
 
         us_Login.setOnClickListener(this);
+        findViewById(R.id.us_Login).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Registro.this, Menu_Principal.class));
+            }
+        });
 
     }
     public void onClick(View v) {

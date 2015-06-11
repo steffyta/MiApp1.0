@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:padding="25dp"
     android:layout_width="match_parent"
-    android:id="@+id/layoutSugerencia"
+    android:id="@+id/layoutTipo_Reglamo"
     android:weightSum="1">
     <TextView
         android:layout_width="330dp"
@@ -125,7 +125,6 @@
             android:layout_height="wrap_content"
             android:minHeight="20dp"
             android:id="@+id/spaceTipoReclamo8" />
-
 
     </RadioGroup>
 </LinearLayout>

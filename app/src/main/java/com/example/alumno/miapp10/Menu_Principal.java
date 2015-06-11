@@ -1,9 +1,11 @@
 package com.example.alumno.miapp10;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class Menu_Principal extends ActionBarActivity {
@@ -12,6 +14,18 @@ public class Menu_Principal extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu__principal);
+        findViewById(R.id.btnSugerencia).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Menu_Principal.this, Sugerencia.class));
+            }
+        });
+        findViewById(R.id.btnReclamo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Menu_Principal.this, Tipo_Reclamo.class));
+            }
+        });
     }
 
 
