@@ -2,23 +2,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:padding="25dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     android:layout_width="match_parent"
     android:id="@+id/layoutMenu">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="15dp"
+        android:id="@+id/spaceMenu5" />
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/logoMenu"
-        android:src="@drawable/logomuni"
-        android:layout_weight="0.01" />
+        android:src="@drawable/logomuni" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="15dp"
+        android:id="@+id/spaceMenu1" />
 
     <Button
         android:id="@+id/btnSugerencia"
         android:text="Sugerencia/Felicitaciones"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+        android:layout_height="wrap_content"/>
 
     <Space
         android:layout_width="match_parent"
@@ -43,7 +52,6 @@
         android:text="Información del Servicio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
 
     <Space
         android:layout_width="match_parent"

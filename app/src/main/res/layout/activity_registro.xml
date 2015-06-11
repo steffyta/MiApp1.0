@@ -2,22 +2,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:padding="35dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     android:layout_width="match_parent"
-    android:id="@+id/layoutRegistro">
+    android:id="@+id/layoutRegistro"
+    android:weightSum="1">
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="15dp"
+        android:id="@+id/spaceRegistro" />
 
     <ImageView
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/logoRegistro"
-        android:src="@drawable/logomuni"
-        android:layout_weight="0.01" />
+        android:id="@+id/logoMenu"
+        android:src="@drawable/logomuni" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="20dp"
-        android:id="@+id/spaceRegistro" />
+        android:minHeight="15dp"
+        android:id="@+id/spaceRegistro1" />
 
     <TextView
         android:layout_width="wrap_content"

@@ -1,5 +1,7 @@
 package com.example.alumno.miapp10;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.provider.MediaStore;
@@ -16,7 +18,7 @@ import android.widget.ImageView;
 
 public class Reclamo extends ActionBarActivity implements OnClickListener{
 
-    Button btn;
+    Button btn, btnEnviar;
     ImageView img;
     Intent i;
     Bitmap bmp;
@@ -33,7 +35,8 @@ public class Reclamo extends ActionBarActivity implements OnClickListener{
     {
         btn = (Button)findViewById(R.id.btnCamara);
         btn.setOnClickListener(this);
-
+        btnEnviar = (Button)findViewById(R.id.btnEnviar);
+        btnEnviar.setOnClickListener(this);
         img = (ImageView)findViewById(R.id.viewFoto);
 
     }
@@ -62,14 +65,28 @@ public class Reclamo extends ActionBarActivity implements OnClickListener{
 
     @Override
     public void onClick(View v) {
-        int id;
-        id= v.getId();
-        switch (id)
+       // int id;
+       // id= v.getId();
+        switch (v.getId())
         {
             case R.id.btnCamara:
                 i= new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 startActivityForResult(i,cons);
                 break;
+            case R.id.btnEnviar:
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle("Importante");
+                builder.setMessage("Su reclamo a sido enviado exitosamente");
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener(){
+                    //función onClick para volver al Menu_Principal luego de apretar 'OK' en el AlertDialog
+                    @Override
+                    public void onClick(DialogInterface dialog, int which){
+                        Intent intent = new Intent(getBaseContext(), Menu_Principal.class);
+                        startActivity(intent);
+                    }
+                });
+                builder.create();
+                builder.show();
         }
     }
 

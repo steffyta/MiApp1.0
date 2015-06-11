@@ -42,7 +42,7 @@
 </RadioGroup>
 
     <TextView
-        android:layout_width="240dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ingrese Sugerencia/Felicitaciones"
         android:id="@+id/textSugerencia"
@@ -61,7 +61,8 @@
         android:inputType="textMultiLine"
         android:ems="10"
         android:id="@+id/editText"
-        android:layout_weight="0.57" />
+        android:layout_weight="0.88" />
+
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
